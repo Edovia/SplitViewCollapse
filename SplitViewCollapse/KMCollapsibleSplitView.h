@@ -12,4 +12,6 @@
 
 @property (assign, nonatomic) BOOL animateCollapse;
 
+- (void)toggleRightPane;
+
 @end

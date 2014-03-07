@@ -41,7 +41,8 @@
 
 #pragma mark - Actions
 
-- (IBAction) toggleRightPane:(id)sender {
+- (void)toggleRightPane
+{
 	if (self.originalRightPaneWidth <= 0.0) {
 		self.originalRightPaneWidth = self.rightPane.frame.size.width;
 	}
