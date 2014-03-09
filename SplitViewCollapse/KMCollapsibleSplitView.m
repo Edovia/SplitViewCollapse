@@ -69,6 +69,22 @@
 	}
 }
 
+- (void)collapseRightPane:(BOOL)collapse
+{
+    if (collapse && ![self isSubviewCollapsed:self.rightPane]) {
+        [self toggleRightPane];
+    }
+    else if (!collapse && [self isSubviewCollapsed:self.rightPane]) {
+        [self toggleRightPane];
+    }
+}
+
+- (BOOL)isRightPaneCollapsed
+{
+    return [self isSubviewCollapsed:self.rightPane];
+}
+
+
 #pragma mark - Accessors
 
 - (void) setDividerPosition:(CGFloat)value {

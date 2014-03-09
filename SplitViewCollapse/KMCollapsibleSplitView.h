@@ -13,5 +13,7 @@
 @property (assign, nonatomic) BOOL animateCollapse;
 
 - (void)toggleRightPane;
+- (void)collapseRightPane:(BOOL)collapse;
+- (BOOL)isRightPaneCollapsed;
 
 @end
